@@ -1,0 +1,9 @@
+npm i express dotenv mongoose body-parser bcrypt
+extention = mongo snippets for node js
+npm i nodemon 
+npm i jsonwebtoken
+
+for email = nodemailer;
+npm i nodemailer
+npm i cors
+ npm install --save mongoose mongoose-timestamp 
