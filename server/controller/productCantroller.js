@@ -1,15 +1,18 @@
 // import product schema from models
-const Product = require('../model/Product')
+const allproducts = require('../model/Product');
 
 
-//  create products
+
+
+//  create products --Admingetsingle
 exports.createProduct = async (req,res,next)=>{
-    const productdemo = await Product.create(req.body);
+    const productdemo = await allproducts.create(req.body);
     res.status(201).json({
         success:true,
         productdemo
     })
 }
+
 // get all product --Admin
 
 exports.getAllproduct = async (req,res)=>{
@@ -80,5 +83,3 @@ exports.getsingleproduct = async(req,res)=>{
 
     })
 }
-
-
